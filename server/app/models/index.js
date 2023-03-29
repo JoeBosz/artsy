@@ -1,5 +1,5 @@
-const Class = require("./Class");
-const Assignment = require("./Assignment");
-const Student = require("./Student");
+import Assignment from "./Assignment";
+import Class from "./Class";
+import Student from "./Student";
 
-module.exports = { Class, Assignment, Student };
+export { Class, Assignment, Student };
