@@ -4,15 +4,15 @@ import AssignmentList from "../components/assignments-list";
 const assignments = [
   {
     id: "1",
-    title: "Learn React",
+    title: "Learn Pottery",
   },
   {
     id: "2",
-    title: "Learn GraphQL",
+    title: "Learn Water Colors",
   },
   {
     id: "3",
-    title: "Learn Apollo",
+    title: "Learn Bath Bombs",
   },
 ];
 
