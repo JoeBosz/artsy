@@ -1,5 +1,3 @@
-import Assignment from "./Assignment";
-import Class from "./Class";
-import Student from "./Student";
-
-export { Class, Assignment, Student };
+export { default as Assignment } from "./assignment.js";
+export { default as Class } from "./class.js";
+export { default as Student } from "./student.js";
