@@ -9,14 +9,18 @@ export default `
   type Mutation {
     "Create a new student user"
     createStudent(newStudent: StudentInput): Student
+
     "Login a student user"
     login(username: String!, password: String!): Student
+
     "Add a new class to student user"
-    addClass(newClass: ClassInput): Class
+    createClass(newClass: ClassInput): Class
+
     "Remove a class from student user"
     removeClass(id: ID!): Class
+
     "Add a new assignment to a class"
-    addAssignment(newAssignment: AssignmentInput): Assignment
+    createAssignment(newAssignment: AssignmentInput): Assignment
   }
   
   "Create user student login response"
