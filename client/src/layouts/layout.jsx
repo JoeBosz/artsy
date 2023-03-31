@@ -19,7 +19,7 @@ export default function Layout() {
       Use `useOutletContext()` in any Outlet  🧒🏾 component to access the user  ℹ️ info.
       https://reactrouter.com/en/main/hooks/use-outlet-context#useoutletcontext
        */}
-      <Outlet context="" />
+      <Outlet context={{ username: "Student" }} />
       <Footer />
     </>
   );
