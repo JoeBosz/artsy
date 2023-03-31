@@ -13,14 +13,14 @@ const resolvers = {
     },
   },
   Mutation: {
-    createClass: async (_, { input }) => {
-      return await Class.create(input);
+    createClass: async (_, { newClass }) => {
+      return await Class.create(newClass);
     },
-    createStudent: async (_, { input }) => {
-      return await Student.create(input);
+    createStudent: async (_, { newStudent }) => {
+      return await Student.create(newStudent);
     },
-    createAssignment: async (_, { input }) => {
-      return await Assignment.create(input);
+    createAssignment: async (_, { newAssignment }) => {
+      return await Assignment.create(newAssignment);
     },
   },
 };
