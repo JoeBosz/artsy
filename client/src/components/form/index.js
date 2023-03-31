@@ -1,2 +1,3 @@
-export { default as Input } from "./input";
-export { default as Select } from "./select";
+export { default as input } from "./Input";
+export { default as select } from "./Select";
+
