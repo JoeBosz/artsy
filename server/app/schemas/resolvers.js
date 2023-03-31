@@ -1,6 +1,6 @@
-import { Assignment, Class, Student } from "./models";
+import { Assignment, Class, Student } from "../models/index.js";
 
-export const resolvers = {
+const resolvers = {
   Query: {
     classes: async () => {
       return await Class.find();
@@ -24,3 +24,5 @@ export const resolvers = {
     },
   },
 };
+
+export default resolvers;

@@ -13,6 +13,6 @@ const classSchema = new Schema({
   ],
 });
 
-const Class = model("Class", classSchema);
+const Class = model("class", classSchema);
 
 export default Class;
