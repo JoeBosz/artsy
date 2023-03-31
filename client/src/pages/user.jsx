@@ -12,7 +12,11 @@ const assignments = [
   },
   {
     id: "3",
-    title: "Learn Bath Bombs",
+    title: "Learn Oil Painting",
+  },
+  {
+    id: "4",
+    title: "Learn Sculpting",
   },
 ];
 
