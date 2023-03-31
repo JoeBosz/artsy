@@ -38,7 +38,7 @@ export default `
   }
   
   type Student {
-    id: ID!
+    id: ID
     username: String!
     password: String!
   }
