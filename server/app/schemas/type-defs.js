@@ -1,4 +1,3 @@
-// TODO: Consider adding additional documentation to the type definitions
 export default `
   type Query {
     classes: [Class]
