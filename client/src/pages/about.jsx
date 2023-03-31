@@ -2,12 +2,7 @@ export default function About() {
   return (
     <main className="px-4 text-center">
       <h2>About</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod possimus,
-        commodi aliquam vitae laborum asperiores doloribus deserunt, eius quis
-        fuga, nemo reprehenderit dolor tempora. Quo ad molestiae quis!
-        Asperiores, iste.
-      </p>
+      <p>Artsy is a great place to sign up for various art classes. You are able to pick what classes you want and organize your assignments.</p>
     </main>
   );
 }

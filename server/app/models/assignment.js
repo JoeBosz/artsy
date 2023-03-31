@@ -7,6 +7,6 @@ const assignmentSchema = new Schema({
   },
 });
 
-const Assignment = model("Assignment", assignmentSchema);
+const Assignment = model("assignment", assignmentSchema);
 
 export default Assignment;

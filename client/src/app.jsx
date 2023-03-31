@@ -2,8 +2,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layouts/layout";
 import { About, Login, User } from "./pages";
 
+// using the createBrowserRouter function to create a router
 const router = createBrowserRouter([
   {
+    // connecting the Layout component to the router
     element: <Layout />,
     children: [
       { path: "/", element: <Login /> },
