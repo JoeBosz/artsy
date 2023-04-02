@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input } from "../components/form";
+import Input from "../components/form/input";
 
 export default function LoginRegister() {
   const [isRegistering, setIsRegistering] = useState(false);
