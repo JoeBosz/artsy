@@ -1,13 +1,16 @@
+// import LoginRegister component in App.jsx
 import { useState } from "react";
 import { Input } from "../components/form";
 
+// Using LoginRegister component in App.jsx
 export default function LoginRegister() {
   const [isRegistering, setIsRegistering] = useState(false);
 
+  // If isRegistering is true, then we are registering a new account
   return (
     <main>
       <h2 className="text-center">
-        {isRegistering ? "Register a New Account" : "Login 2 Ur Account"}
+        {isRegistering ? "Register a New Account" : "Login To Your Account"}
       </h2>
       <form className="flex flex-col items-center gap-y-2 px-4">
         <Input
