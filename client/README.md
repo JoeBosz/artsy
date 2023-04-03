@@ -34,4 +34,4 @@ As TS is not an option for us, our linting will enforce the use of PropTypes. Th
 
 ---
 
-- [Apollo Client](https://www.apollographql.com/docs/react#recommended-docs)
+- [Apollo Client](https://www.apollographql.com/dcdcs/react#recommended-docs)
