@@ -13,11 +13,16 @@ const resolvers = {
     },
   },
   Mutation: {
+    async createStudent(parent, { newStudent }) {
+      const token = await Student.create(newStudent);
+      return { token };
+    },
+    async login(parent, { username, password }) {
+      const token = await Student.findOne({ username });
+      return token;
+    },
     createClass: async (_, { newClass }) => {
       return await Class.create(newClass);
-    },
-    createStudent: async (_, { newStudent }) => {
-      return await Student.create(newStudent);
     },
     createAssignment: async (_, { newAssignment }) => {
       return await Assignment.create(newAssignment);
