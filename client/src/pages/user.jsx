@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import AssignmentList from "../components/assignments-list";
 
+
 const assignments = [
   {
     id: "1",

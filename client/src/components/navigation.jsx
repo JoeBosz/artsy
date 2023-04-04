@@ -28,8 +28,6 @@ export default function Navigation() {
         <li>
           <Link to="/">Register</Link>
         </li>
-
-        <img src="./img/Artphoto.jpg" alt="Art" width="100" height="100" />
       </ul>
     </nav>
   );
