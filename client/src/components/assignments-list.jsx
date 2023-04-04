@@ -1,16 +1,22 @@
 import PropTypes from "prop-types";
+import oilimage from "../img/Oil.jpg";
+import potteryimage from "../img/Potteryphoto.jpg";
+import waterimage from "../img/Watercolorphoto.jpg";
 
 export default function AssignmentList({ assignments }) {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="items-left flex flex-col justify-center">
       <h1 className="text-3xl font-bold">Assignments</h1>
+      <img alt="Assignment List" src={potteryimage}></img>
       <ul className="mt-4">
+        <img alt="Assignment List" src={waterimage}></img>
         {assignments.map((assignment) => (
           <li key={assignment.id} className="text-xl">
             {assignment.title}
           </li>
         ))}
       </ul>
+      <img alt="Assignment List" src={oilimage}></img>
     </div>
   );
 }

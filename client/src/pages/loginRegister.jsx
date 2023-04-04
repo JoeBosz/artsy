@@ -1,6 +1,6 @@
+import { useMutation } from "@apollo/client";
 import { useState } from "react";
 import Input from "../components/form/input";
-import { useMutation } from "@apollo/client";
 import { CREATE_STUDENT, LOGIN } from "../schema/mutations";
 
 export default function LoginRegister() {
@@ -38,7 +38,7 @@ export default function LoginRegister() {
   };
 
   return (
-    <main>
+    <main id="loginbackgroundimage">
       <h2 className="text-center">
         {isRegistering ? "Register a New Account" : "Login To Your Account"}
       </h2>
