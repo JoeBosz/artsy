@@ -1,9 +1,11 @@
 import { useMutation } from "@apollo/client";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Input from "../components/form/input";
 import { CREATE_STUDENT, LOGIN } from "../schema/mutations";
 
 export default function LoginRegister() {
+  const navigate = useNavigate();
   const [isRegistering, setIsRegistering] = useState(false);
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -26,6 +28,7 @@ export default function LoginRegister() {
         password,
       },
     });
+    navigate("/user");
   };
 
   const handleRegister = async (e) => {
