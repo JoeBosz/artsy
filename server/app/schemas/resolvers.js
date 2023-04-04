@@ -18,6 +18,7 @@ const resolvers = {
       return { token };
     },
     async login(parent, { username, password }) {
+      console.log(username, password);
       const token = await Student.findOne({ username });
       return token;
     },

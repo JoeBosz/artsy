@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // export default function Navigation() {
 // return (
@@ -15,24 +15,18 @@
 // );
 // }
 
-export default function Navigation({ setPage }) {
+export default function Navigation() {
   return (
     <nav>
       <ul className="flex justify-center gap-x-8 p-4 text-lg">
         <li>
-          <a href="#home" onClick={() => setPage("home")}>
-            Home
-          </a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="loginForm" onClick={() => setPage("loginForm")}>
-            Login
-          </a>
+          <Link to="/">Login</Link>
         </li>
         <li>
-          <a href="loginRegister" onClick={() => setPage("loginRegister")}>
-            Register
-          </a>
+          <Link to="/">Register</Link>
         </li>
 
         <img src="./img/Artphoto.jpg" alt="Art" width="100" height="100" />
