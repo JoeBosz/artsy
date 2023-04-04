@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import oilimage from "../img/Oil.jpg";
 
 export default function AssignmentList({ assignments }) {
   return (
@@ -11,6 +12,7 @@ export default function AssignmentList({ assignments }) {
           </li>
         ))}
       </ul>
+      <img alt="Assignment List" src={oilimage}></img>
     </div>
   );
 }

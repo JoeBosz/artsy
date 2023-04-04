@@ -34,8 +34,6 @@ export default function Navigation({ setPage }) {
             Register
           </a>
         </li>
-
-        <img src="./img/Artphoto.jpg" alt="Art" width="100" height="100" />
       </ul>
     </nav>
   );
