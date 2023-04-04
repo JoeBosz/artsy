@@ -1,43 +1,41 @@
 import { useState } from "react";
 import Input from "../components/form/input";
-import {useMutation} from '@apollo/client'
-import {CREATE_STUDENT, LOGIN} from '../schema/mutations'
+import { useMutation } from "@apollo/client";
+import { CREATE_STUDENT, LOGIN } from "../schema/mutations";
 
 export default function LoginRegister() {
   const [isRegistering, setIsRegistering] = useState(false);
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [registeredStudent] = useMutation(CREATE_STUDENT);
-  const [loginStudent] = useMutation(LOGIN);
-
-  
-  const handleUserName = (e)=>{
-    setUserName(e)
-  }
-  
-  const handlePassword = (e)=>{
-    setPassword(e)
-  }
-  const handleLogin = async (e) => {
-
-    e.preventDefault();
-      await registeredStudent({
-        variables: {
-          username,
-          password,
-        },
-      });
-
+  const [loginStudent, { error }] = useMutation(LOGIN);
+  console.log(error);
+  const handleUserName = (e) => {
+    setUserName(e);
   };
 
-  const handleRegister = async (e)=>{
+  const handlePassword = (e) => {
+    setPassword(e);
+  };
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    console.log(username, password);
     await loginStudent({
       variables: {
         username,
         password,
       },
-  });
-  }
+    });
+  };
+
+  const handleRegister = async (e) => {
+    await registeredStudent({
+      variables: {
+        username,
+        password,
+      },
+    });
+  };
 
   return (
     <main>
@@ -45,8 +43,8 @@ export default function LoginRegister() {
         {isRegistering ? "Register a New Account" : "Login 2 Ur Account"}
       </h2>
       <form className="flex flex-col items-center gap-y-2 px-4">
-        <input
-        style={{color:'black'}}
+        <Input
+          style={{ color: "black" }}
           onChange={(e) => handleUserName(e.target.value)}
           type="text"
           label="Username"
@@ -54,9 +52,8 @@ export default function LoginRegister() {
           placeholder="Enter your username"
           required
         />
-        <input
-                style={{color:'black'}}
-
+        <Input
+          style={{ color: "black" }}
           onChange={(e) => handlePassword(e.target.value)}
           type="password"
           label="Password"
@@ -65,7 +62,11 @@ export default function LoginRegister() {
           required
         />
         <button
-          onClick={(e) => isRegistering ? handleRegister(e): handleSubmit(e)}
+          onClick={(e) =>
+            isRegistering === "Register a New Account"
+              ? handleRegister(e)
+              : handleLogin(e)
+          }
           type="button"
           className="button mt-4 bg-green-500 hover:bg-green-300"
         >

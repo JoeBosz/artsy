@@ -1,7 +1,14 @@
 import camelCase from "lodash/camelCase";
 import PropTypes from "prop-types";
 
-export default function Input({ label, id, type, placeholder, required }) {
+export default function Input({
+  label,
+  id,
+  type,
+  placeholder,
+  required,
+  onChange,
+}) {
   return (
     <div>
       <label htmlFor={id} className="sr-only">
@@ -13,6 +20,8 @@ export default function Input({ label, id, type, placeholder, required }) {
         placeholder={placeholder || label}
         required={required}
         name={camelCase(id)}
+        style={{ color: "black" }}
+        onChange={onChange}
       />
     </div>
   );
@@ -30,4 +39,5 @@ Input.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
+  onChange: PropTypes.func.isRequired,
 };
