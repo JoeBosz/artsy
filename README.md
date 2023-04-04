@@ -1,35 +1,70 @@
-# MERN (Apollo GraphQL) Server Template
+# Artsy
 
-Monorepo for MERN (MongoDB, Express, React, Node) stack with Apollo GraphQL server. It uses Tailwind CSS for styling, which can be integrated with React component libraries such as MUI.
+## Table of Contents
 
-[Server](./server/README.md) | [Client](./client/README.md)
+- [Description](#description)
+- [Installation](#installation)
+- [Mock-Up](#mock-up)
+- [Usage](#usage)
+- [License](#license)
+- [Badges](#badges)
 
-## Commits
+## Description
 
-To help ensure great commit messages for this project, consider using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary). Here's [an extension](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) to help you do that.
+# User Story
 
-## Branching
+```
+AS A small business owner
+I WANT to be able to write and save notes
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
+```
 
-`main` should only be for `Initial commit` and then not be used again until you are ready to deploy **something.** You should create a `dev` branch and use that for all development. Then, you can create feature branches off of `dev` and merge them back into `dev` when they are ready.
+# Acceptance Criteria
 
-You could even do: `dev-server` and `dev-client` if you want to separate the two. From there, you might have: `dev-server-graphQL-type-defs` and `dev-server-graphQL-resolvers` and so on.
+```
+GIVEN a note-taking application
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
+WHEN I click on the link to the notes page
+THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+WHEN I enter a new note title and the note’s text
+THEN a Save icon appears in the navigation at the top of the page
+WHEN I click on the Save icon
+THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+WHEN I click on an existing note in the list in the left-hand column
+THEN that note appears in the right-hand column
+WHEN I click on the Write icon in the navigation at the top of the page
+THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+```
 
-Delete branches after they are merged. You can always create a new branch if you need to. You should probably not have more than 3-4 branches at any 1️⃣ time. Use `git branch` to confirm.
+## Installation
 
-### Protect ~~This 🏠~~ Your `main` Branch
+Heroku Deploy:
 
-Here's [a guide](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to do that.
+GitHub Repo:
 
-It should be protected from force pushes and deletions. It should also require at least one review before merging.
+## Mock-Up
 
-## Code Quality
+The following image shows the web application's appearance and functionality:
 
-It might be good time to have [this](https://github.com/ryanmcdermott/clean-code-javascript) open and see how much of this you can apply.
+## Usage
 
-## Getting Started
+Click link in top right corner of page to add notes. Once your notes are added and saved, you will be able to view them on the side of the page along with other saved notes.
 
-You probably want to work on `server` and `client` separately, and then you can start them together with `npm run dev` from the root for development.
+## License
 
-## Questions❔
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic)
 
-Ask sooner rather than later!
+MIT License
+
+Copyright (c) 2023 Brittany Burton, Anthony Dandino, John Robinson, and Joseph Stzembosz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Badges
+
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic) ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![npm collaborators](https://img.shields.io/npm/collaborators/inquirer) ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/npm/inquirer) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
