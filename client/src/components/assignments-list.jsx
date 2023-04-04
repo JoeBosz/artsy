@@ -8,8 +8,14 @@ export default function AssignmentList({ assignments }) {
     <div className="items-left flex flex-col justify-center">
       <h1 className="text-3xl font-bold">Assignments</h1>
       <img alt="Assignment List" src={potteryimage}></img>
+      <p className="text-center">
+        Create a Vase on a wheel for this assignment
+      </p>
       <ul className="mt-4">
         <img alt="Assignment List" src={waterimage}></img>
+        <p className="text-center">
+          Create a Watercolor painting for this assignment
+        </p>
         {assignments.map((assignment) => (
           <li key={assignment.id} className="text-xl">
             {assignment.title}
@@ -17,6 +23,7 @@ export default function AssignmentList({ assignments }) {
         ))}
       </ul>
       <img alt="Assignment List" src={oilimage}></img>
+      <p className="text-center">Create an Oil painting for this assignment</p>
     </div>
   );
 }
