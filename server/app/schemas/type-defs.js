@@ -1,4 +1,3 @@
-// TODO: Consider adding additional documentation to the type definitions
 export default `
   type Query {
     classes: [Class]
@@ -31,30 +30,38 @@ export default `
     user: Student
   }
   
+  "Class type with included assignments"
   type Class {
     id: ID!
     name: String!
     assignments: [Assignment]
   }
   
+  "Registered student user"
   type Student {
-    id: ID!
+    id: ID
     username: String!
     password: String!
   }
   
+  "Assignment type embedded in class"
   type Assignment {
     id: ID!
     name: String!
   }
 
+  "Student input type"
   input StudentInput {
     username: String!
     password: String!
   }
+
+  "Class input type"
   input ClassInput {
     name: String!
   }
+
+  "Assignment input type"
   input AssignmentInput {
     name: String!
   }

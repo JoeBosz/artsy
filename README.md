@@ -1,35 +1,83 @@
-# MERN (Apollo GraphQL) Server Template
+# Artsy
 
-Monorepo for MERN (MongoDB, Express, React, Node) stack with Apollo GraphQL server. It uses Tailwind CSS for styling, which can be integrated with React component libraries such as MUI.
+## Table of Contents
 
-[Server](./server/README.md) | [Client](./client/README.md)
+- [Description](#description)
+- [Installation](#installation)
+- [Mock-Up](#mock-up)
+- [Usage](#usage)
+- [License](#license)
+- [Badges](#badges)
 
-## Commits
+## Description
 
-To help ensure great commit messages for this project, consider using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary). Here's [an extension](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) to help you do that.
+Artsy is a class that is designed for beginners or experienced artist who just want to have some fun and create some art. It’s a website where you can sign up for a art class to expand and learn new skills and more!
 
-## Branching
+# User Story
 
-`main` should only be for `Initial commit` and then not be used again until you are ready to deploy **something.** You should create a `dev` branch and use that for all development. Then, you can create feature branches off of `dev` and merge them back into `dev` when they are ready.
+```
+AS A user
+I WANT to be able to sign up for a class
+SO THAT I can learn new art skills.
+```
 
-You could even do: `dev-server` and `dev-client` if you want to separate the two. From there, you might have: `dev-server-graphQL-type-defs` and `dev-server-graphQL-resolvers` and so on.
+# Acceptance Criteria
 
-Delete branches after they are merged. You can always create a new branch if you need to. You should probably not have more than 3-4 branches at any 1️⃣ time. Use `git branch` to confirm.
+```
+GIVEN an art application
+WHEN I load the application,
+THEN I am presented with a navbar with login, home, and register tabs.
+WHEN I click on register tab
+THEN I am given a sign up form to create a new account.
+WHEN I click on login tab
+THEN I am given a login form to login to my account.
+WHEN I click on home tab
+THEN I am given a list of classes to choose from.
+WHEN I click on a class
+THEN I am given a description of the class and a button to sign up for the class.
+WHEN I click on the sign up button
+THEN I am given a form to fill out to sign up for the class.
+WHEN I click on the submit button
+THEN I am given a confirmation message that I have signed up for the class.
+WHEN I click on the logout button
+THEN I am logged out of my account.
 
-### Protect ~~This 🏠~~ Your `main` Branch
+```
 
-Here's [a guide](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to do that.
+## Installation
 
-It should be protected from force pushes and deletions. It should also require at least one review before merging.
+GitHub Repo: https://github.com/JoeBosz/artsy
 
-## Code Quality
+Deployment:
+Heroku: https://artsy-smartsy.herokuapp.com/
+Netlify: https://deploy-preview-38--spiffy-frangipane-f2ca92.netlify.app/
 
-It might be good time to have [this](https://github.com/ryanmcdermott/clean-code-javascript) open and see how much of this you can apply.
+## Mock-Up
 
-## Getting Started
+The following image shows the web application's appearance and functionality:
 
-You probably want to work on `server` and `client` separately, and then you can start them together with `npm run dev` from the root for development.
+![Homepage](homepage.png)
 
-## Questions❔
+![User page](login%20page.png)
 
-Ask sooner rather than later!
+## Usage
+
+Click link in top right corner of page to add notes. Once your notes are added and saved, you will be able to view them on the side of the page along with other saved notes.
+
+## License
+
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic)
+
+MIT License
+
+Copyright (c) 2023 Brittany Burton, Anthony Dandino, John Robinson, and Joseph Stzembosz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Badges
+
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic) ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![npm collaborators](https://img.shields.io/npm/collaborators/inquirer) ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/npm/inquirer) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)

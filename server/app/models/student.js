@@ -17,6 +17,8 @@ const studentSchema = new Schema({
   ],
 });
 
+// TODO: Add 🪝s to encrypt password
+
 const Student = model("student", studentSchema);
 
 export default Student;
