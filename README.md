@@ -50,7 +50,7 @@ GitHub Repo: https://github.com/JoeBosz/artsy
 
 Deployment:
 Heroku: https://artsy-smartsy.herokuapp.com/
-Netlify:
+Netlify: https://deploy-preview-38--spiffy-frangipane-f2ca92.netlify.app/
 
 ## Mock-Up
 
