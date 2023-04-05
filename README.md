@@ -11,41 +11,54 @@
 
 ## Description
 
+Artsy is a class that is designed for beginners or experienced artist who just want to have some fun and create some art. It’s a website where you can sign up for a art class to expand and learn new skills and more!
+
 # User Story
 
 ```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+AS A user
+I WANT to be able to sign up for a class
+SO THAT I can learn new art skills.
 ```
 
 # Acceptance Criteria
 
 ```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+GIVEN an art application
+WHEN I load the application,
+THEN I am presented with a navbar with login, home, and register tabs.
+WHEN I click on register tab
+THEN I am given a sign up form to create a new account.
+WHEN I click on login tab
+THEN I am given a login form to login to my account.
+WHEN I click on home tab
+THEN I am given a list of classes to choose from.
+WHEN I click on a class
+THEN I am given a description of the class and a button to sign up for the class.
+WHEN I click on the sign up button
+THEN I am given a form to fill out to sign up for the class.
+WHEN I click on the submit button
+THEN I am given a confirmation message that I have signed up for the class.
+WHEN I click on the logout button
+THEN I am logged out of my account.
+
 ```
 
 ## Installation
 
-Heroku Deploy:
+GitHub Repo: https://github.com/JoeBosz/artsy
 
-GitHub Repo:
+Deployment:
+Heroku: https://artsy-smartsy.herokuapp.com/
+Netlify:
 
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
+
+![Homepage](homepage.png)
+
+![User page](login%20page.png)
 
 ## Usage
 
