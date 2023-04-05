@@ -5,8 +5,8 @@ import cors from "cors";
 import express from "express";
 import http from "http";
 import config from "./config.js";
-import { resolvers, typeDefs } from "./graphql/index.js";
 import decodeToken from "./middleware/decode-token.js";
+import { resolvers, typeDefs } from "./schemas/index.js";
 
 const { port } = config;
 

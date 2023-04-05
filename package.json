@@ -2,9 +2,11 @@
   "name": "template-project-3-monorepo",
   "scripts": {
     "client": "cd client && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" && \"npm run client\"",
     "install": "cd client && npm install && cd ../server && npm install",
-    "server": "cd server && npm run dev"
+    "server": "cd server && npm run dev",
+    "start": "concurrently \"npm run server\" && \"npm run client\"",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
