@@ -8,7 +8,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.10",
+    "@apollo/client": "^3.7.11",
     "graphql": "^16.6.0",
     "lodash.camelcase": "^4.3.0",
     "react": "^18.2.0",
